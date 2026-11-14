@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- 南瓜主体渐变：左上亮，右下暗 -->
+    <radialGradient id="body" cx="40%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#FFBD3E"/>
+      <stop offset="55%" stop-color="#F5921A"/>
+      <stop offset="100%" stop-color="#D96708"/>
+    </radialGradient>
+    <!-- 瓜蒂渐变 -->
+    <linearGradient id="stem" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8FA34A"/>
+      <stop offset="50%" stop-color="#C5D37A"/>
+      <stop offset="100%" stop-color="#6E8038"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 南瓜主体：单一圆润身体轮廓（宽略大于高），不是多个椭圆拼接 -->
+  <path d="M 256 168
+           C 330 164, 392 184, 432 220
+           C 462 248, 470 282, 466 312
+           C 470 342, 462 376, 432 404
+           C 392 440, 330 460, 256 456
+           C 182 460, 120 440, 80 404
+           C 50 376, 42 342, 46 312
+           C 42 282, 50 248, 80 220
+           C 120 184, 182 164, 256 168 Z"
+        fill="url(#body)" stroke="#1a1a1a" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- 瓣间凹槽线（4 条，把表面分成 5 瓣） -->
+  <g fill="none" stroke="#9C4A06" stroke-width="11" stroke-linecap="round" opacity="0.6">
+    <path d="M 138 192 Q 118 312 142 430"/>
+    <path d="M 198 180 Q 182 312 204 440"/>
+    <path d="M 256 176 Q 256 312 256 444"/>
+    <path d="M 314 180 Q 330 312 308 440"/>
+    <path d="M 374 192 Q 394 312 370 430"/>
+  </g>
+
+  <!-- 左侧高光（两瓣上的亮带） -->
+  <path d="M 148 210 Q 132 312 150 412" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.3"/>
+  <path d="M 212 198 Q 198 312 218 420" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" opacity="0.26"/>
+
+  <!-- 瓜蒂（向右弯曲的绿蒂） -->
+  <path d="M 262 168
+           Q 252 128 270 96
+           Q 286 66 322 62
+           Q 354 60 368 80
+           Q 378 98 368 116
+           Q 352 126 332 120
+           Q 314 116 306 134
+           Q 298 150 294 168 Z"
+        fill="url(#stem)" stroke="#1a1a1a" stroke-width="13" stroke-linejoin="round"/>
+  <!-- 瓜蒂高光 -->
+  <path d="M 274 158 Q 266 122 284 92 Q 300 68 326 64" fill="none" stroke="#E6EDB0" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <!-- 瓜蒂顶部截面 -->
+  <ellipse cx="362" cy="84" rx="11" ry="8" fill="#D2DC92" stroke="#1a1a1a" stroke-width="6"/>
+
+  <!-- 装饰：左上小圆圈 + 短线 -->
+  <g stroke="#1a1a1a" stroke-width="9" stroke-linecap="round">
+    <circle cx="118" cy="116" r="13" fill="#1a1a1a"/>
+    <circle cx="118" cy="116" r="13" fill="none"/>
+    <line x1="66" y1="166" x2="98" y2="178"/>
+    <line x1="88" y1="144" x2="106" y2="158"/>
+    <line x1="54" y1="200" x2="82" y2="200"/>
+  </g>
+
+  <!-- 装饰：右上小圆圈 + 短线 -->
+  <g stroke="#1a1a1a" stroke-width="9" stroke-linecap="round">
+    <circle cx="414" cy="116" r="13" fill="#1a1a1a"/>
+    <circle cx="414" cy="116" r="13" fill="none"/>
+    <line x1="446" y1="166" x2="414" y2="178"/>
+    <line x1="424" y1="144" x2="406" y2="158"/>
+    <line x1="458" y1="200" x2="430" y2="200"/>
+  </g>
+
+  <!-- 装饰：右下短线 -->
+  <g stroke="#1a1a1a" stroke-width="9" stroke-linecap="round">
+    <line x1="416" y1="446" x2="444" y2="438"/>
+    <line x1="402" y1="470" x2="428" y2="476"/>
+    <line x1="448" y1="458" x2="464" y2="472"/>
+  </g>
+</svg>
