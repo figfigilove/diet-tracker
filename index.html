@@ -1214,6 +1214,8 @@ const FOOD_DB = [
  { name: '芋头(生)', cat: '主食', cal: 79, protein: 2.2, carbs: 18.1, fat: 0.2, unit: 'g', aliases: ['芋艿(生)', '毛芋(生)', '生芋头', '芋艿'] },
  { name: '紫薯(生)', cat: '主食', cal: 106, protein: 1.6, carbs: 25.1, fat: 0.2, unit: 'g', aliases: ['生紫薯', '紫心红薯(生)', '紫番薯(生)'] },
  { name: '紫薯(熟)', cat: '主食', cal: 120, protein: 1.8, carbs: 27.8, fat: 0.2, unit: 'g', aliases: ['蒸紫薯', '紫薯(蒸)', '熟紫薯', '黑薯(熟)', '紫心红薯(熟)'], note: '指蒸/煮至熟、未加油糖；按生紫薯(106大卡/100g)蒸熟失水约13%折算' },
+{ name: '白薯(生)', cat: '主食', cal: 108, protein: 1.4, carbs: 25.2, fat: 0.2, unit: 'g', aliases: ['白心红薯', '白心红薯(生)', '白心番薯(生)', '白甘薯(生)', '生白薯', '白薯', '白瓤红薯'], note: '即白心/白瓤甘薯，食部86%；数据源自中国食物成分表甘薯(白心)(451kJ/100g)，与红心红薯(86大卡/100g)不同' },
+{ name: '白薯(熟)', cat: '主食', cal: 122, protein: 1.6, carbs: 28.0, fat: 0.2, unit: 'g', aliases: ['蒸白薯', '白薯(蒸)', '熟白薯', '白心红薯(熟)', '白心番薯(熟)'], note: '指蒸/煮至熟、未加油糖；按生白薯(108大卡/100g)蒸熟失水约12%折算' },
 
  // 南瓜/蔬菜
  { name: '普通南瓜(生)', cat: '蔬菜', cal: 23, protein: 0.7, carbs: 5.3, fat: 0.1, unit: 'g', aliases: ['南瓜(生)', '老南瓜(生)'] },
@@ -1252,6 +1254,7 @@ const FOOD_DB = [
  { name: '香菇(鲜,生)', cat: '蔬菜', cal: 26, protein: 2.2, carbs: 5.2, fat: 0.3, unit: 'g', aliases: ['香菇', '鲜香菇', '生香菇', '冬菇', '香蕈'] },
  { name: '香菇(干)', cat: '蔬菜', cal: 275, protein: 20.0, carbs: 61.7, fat: 1.2, unit: 'g', aliases: ['干香菇', '香菇干', '冬菇(干)'], note: '干品，食用前需泡发，按泡发前干重计' },
  { name: '香菇(熟)', cat: '蔬菜', cal: 25, protein: 2.2, carbs: 5.0, fat: 0.3, unit: 'g', aliases: ['熟香菇', '水煮香菇', '焯水香菇', '煮熟香菇'], note: '指水煮/焯熟沥干、未加油；若清炒约再加45大卡/100g' },
+{ name: '金针菇', cat: '蔬菜', cal: 32, protein: 2.4, carbs: 6.0, fat: 0.4, unit: 'g', aliases: ['智力菇', '鲜金针菇', '生金针菇', '金菇', 'enoki'], note: '鲜品，食部100%；数据源自中国食物成分表(133kJ/100g)；清炒/涮锅吸油需另算油脂' },
  { name: '藕(生)', cat: '蔬菜', cal: 74, protein: 1.9, carbs: 16.4, fat: 0.2, unit: 'g', aliases: ['藕', '莲藕', '生藕', '莲藕(生)'] },
  { name: '藕(熟)', cat: '蔬菜', cal: 66, protein: 1.4, carbs: 16.0, fat: 0.1, unit: 'g', aliases: ['熟藕', '煮藕', '莲藕(熟)', '炖藕'], note: '指水煮/炖熟沥干、未加油；若清炒约再加45大卡/100g' },
  { name: '木耳(干)', cat: '蔬菜', cal: 247, protein: 12.1, carbs: 65.6, fat: 1.5, unit: 'g' },
@@ -1333,6 +1336,7 @@ const FOOD_DB = [
  { name: '核桃仁', cat: '坚果', cal: 646, protein: 14.9, carbs: 9.6, fat: 58.8, unit: 'g' },
  { name: '奇亚籽', cat: '坚果', cal: 486, protein: 20.8, carbs: 42.8, fat: 30.7, unit: 'g', aliases: ['奇雅子', 'chia'] },
  { name: '花生(生)', cat: '坚果', cal: 574, protein: 24.8, carbs: 21.7, fat: 44.3, unit: 'g', aliases: ['花生仁(生)', '生花生'] },
+{ name: '花生(炒)', cat: '坚果', cal: 585, protein: 23.9, carbs: 25.7, fat: 44.4, unit: 'g', aliases: ['花生仁(炒)', '炒花生', '熟花生', '盐焗花生'], note: '干炒花生仁，食部100%；数据源自中国食物成分表(2447kJ/100g≈585大卡)，通常含盐；市售油炸花生热量更高' },
 
  // 零食
  { name: '沃集鲜黄油鹰嘴豆高纤燕麦脆脆棒', cat: '零食', cal: 450, protein: 9.2, carbs: 60.5, fat: 16.3, unit: 'g' },
